@@ -1,0 +1,606 @@
+body,
+div,
+span,
+header,
+footer,
+nav,
+section,
+aside,
+article,
+ul,
+dl,
+dt,
+dd,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+b,
+textarea,
+button,
+input,
+select,
+figure,
+figcaption,
+{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  font-weight: normal;
+  font-family: "Microsoft Yahei";
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  &:hover {
+    outline: none;
+  }
+}
+
+.bodylogin {
+  background: url(../assets/loginbg.png) no-repeat fixed;
+  background-size: 100%;
+  z-index: -1
+}
+
+.login-content {
+  .weui-cells:before,
+  .weui-cells:after,
+  .weui-cell:after,
+  .weui-cell:before {
+    display: none
+  }
+   ::-webkit-input-placeholder {
+    color: #ffffff
+  }
+  .weui-cells {
+    background-color: transparent!important
+  }
+  .iconfont,
+  .weui-input {
+    color: #fff;
+    text-align: center
+  }
+  .vux-no-group-title {
+    margin-top: 0;
+    position: relative;
+  }
+  .weui-cell__hd {
+    position: absolute;
+    left: 0.4rem;
+  }
+  .weui-cell__ft {
+    position: absolute;
+    right: 0.4rem
+  }
+}
+
+.weui-tabbar {
+  position: fixed!important
+}
+
+.tools .weui-grid__label {
+  color: #fff!important;
+}
+
+.weui-cells {
+  margin-top: 0!important
+}
+
+.order .vux-no-group-title:after,
+.order .vux-no-group-title:before {
+  display: none
+}
+
+.weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon,
+.weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon>i,
+.weui-tabbar__item.weui-bar__item_on .weui-tabbar__label {
+  color: #171717!important
+}
+
+.vux-flexbox {
+  .vux-flexbox-item {
+    margin-left: 0!important
+  }
+  .weui-search-bar__box .weui-icon-search,
+  .weui-search-bar__box .weui-icon-clear,
+  .weui-search-bar__cancel-btn {
+    line-height: 32px;
+  }
+}
+
+.home {
+  .vux-flexbox {
+    background-color: #fff
+  }
+}
+
+.search_page,
+.home {
+  // 商品列表
+  .list-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .list-box-item-title {
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      /** 对象作为伸缩盒子模型显示 **/
+      -webkit-box-orient: vertical;
+      /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+      -webkit-line-clamp: 2;
+      /** 显示的行数 **/
+      overflow: hidden;
+      /** 隐藏超出的内容 **/
+    }
+    .list-item {
+      position: relative;
+      width: 4.96rem;
+      height: 6.7rem;
+      padding-bottom: 0.3rem;
+      margin-bottom: 0.05333rem;
+      background-color: #fff;
+      .loading {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -85%);
+        width: 2.4rem;
+        height: 2.4rem;
+        line-height: 2.4rem;
+        border-radius: 50%;
+        background-color: rgba(103, 102, 102, 0.3);
+        color: #fff;
+      }
+      img {
+        width: 100%;
+        height: 4.24rem;
+      }
+      .list-box-item-title {
+        padding: 0 14px;
+      }
+      .list-box-item-price {
+        padding: 0 14px;
+        position: absolute;
+        bottom: 0.3rem;
+      }
+    }
+  }
+}
+
+.xs-plugin-pullup-container {
+  position:relative!important;
+  margin: 1.5em auto;
+  bottom:0!important;
+}
+
+// 搜索页面样式
+.search_page {
+  .search-box {
+    background-color: #fff;
+    .flex-seach {
+      .weui-search-bar,
+      .weui-search-bar__form {
+        background-color: transparent;
+      }
+      .weui-search-bar__form:after,
+      .weui-search-bar:after,
+      .weui-search-bar:before {
+        display: none
+      }
+      .weui-search-bar__box,
+      .weui-search-bar__label {
+        background-color: #e7e7e6;
+        border-radius: 30px;
+      }
+    }
+    .weui-search-bar__label {
+      line-height: 30px;
+    }
+    .weui-cells.vux-search_show {
+      max-height: 100%
+    }
+    .weui-search-bar__box .weui-search-bar__input {
+      padding: 6px 0;
+    }
+  }
+}
+
+// 详情页popup弹出框样式
+.vux-popup-dialog {
+  overflow-y: initial!important
+}
+
+// 详情页数量加减按钮样式
+.vux-number-input {
+  height: 30px!important;
+  padding: 2px 0!important;
+}
+
+// 详情页面描述的样式强制换行
+.describe-list {
+  table {
+    display: table-cell!important;
+  }
+  ul {
+    overflow: hidden;
+  }
+}
+
+.vux-number-selector {
+  overflow: hidden;
+  height: 30px!important;
+  line-height: 28px!important
+}
+
+.tworow {
+  display: -webkit-box;
+  /** 对象作为伸缩盒子模型显示 **/
+  -webkit-box-orient: vertical;
+  /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+  -webkit-line-clamp: 2;
+  /** 显示的行数 **/
+  overflow: hidden;
+  /** 隐藏超出的内容 **/
+}
+
+// 删除线样式
+.textDec {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.white {
+  background-color: #ffffff!important;
+}
+
+.weui-cells {
+  font-size: 14px!important
+}
+
+.commodity-details,
+.dateils {
+  .weui-btn {
+    border-radius: 0!important;
+  }
+  // A 标签的重置
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #000000!important;
+  }
+}
+
+// 去除底部边框
+.weui-btn:after {
+  border-radius: 0!important;
+  display: none!important;
+}
+
+.weui-cells:after {
+  display: none!important
+}
+
+// 地址页面
+.address_page {
+  .vux-header-title,
+  .vux-header .vux-header-right a {
+    color: #000!important
+  }
+  .vux-header .vux-header-left .left-arrow:before {
+    border-color: #000
+  }
+  .weui-cells:before {
+    display: none
+  }
+}
+
+// 地址列表
+.address-list {
+  .weui-cells {
+    background-color: transparent!important
+  }
+}
+
+// 新建地址页面
+.address-item {
+  .vux-cell-box:before {
+    display: none
+  }
+}
+
+// 确认下单
+.paymentlist_page {
+  .vux-header .vux-header-left .left-arrow:before {
+    border-color: #000!important
+  }
+  .vux-header .vux-header-title {
+    color: #000;
+  }
+}
+
+.describe-list {
+  padding: 0 0.4rem;
+  p {
+    white-space: pre-line!important;
+    a {
+      img {
+        width: 100%!important;
+        height: 100%!important;
+      }
+    }
+  }
+  img {
+    width: 100%!important;
+    height: 100%!important;
+  }
+}
+
+// 品牌列表
+.ClassifyList_page {
+  .vux-header .vux-header-left .left-arrow:before {
+    border-color: #000!important
+  }
+  .vux-header .vux-header-title {
+    color: #000;
+  }
+  .weui-loadmore_line {
+    margin-top: 1.5em;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.textWhite {
+  color: #ffffff;
+}
+
+// 多选样式购物车，我的足迹
+.default-item {
+  border: 1px solid #ccc;
+  width: 23px;
+  height: 23px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.item-left {
+  .weui-cells:before {
+    display: none
+  }
+}
+
+.checkbox-item {
+  display: flex;
+  padding-left: 0.32rem;
+}
+
+.icon-xuanzhong {
+  background: #fff;
+  border: none;
+  font-size: 30px;
+  &:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #E64340;
+  }
+}
+
+// 签到样式
+.sign {
+  position: absolute;
+  top: 2.60666rem;
+  left: -0.53333rem;
+  min-width: 2.8rem;
+  height: 0.77381rem;
+  padding: 0 0.15555rem 0 0.66666rem;
+  color: #fff;
+  line-height: 0.70333rem;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 40px;
+  span {
+    vertical-align: middle;
+  }
+}
+
+// 我的收藏
+.weui-loadmore_line .weui-loadmore__tips {
+  background-color: #f7f7f7!important;
+}
+
+// head 样式重写
+.page-head {
+  background-color: #fff!important;
+  color: #000!important;
+  font-size: 16px!important;
+  .vux-header-left .left-arrow:before {
+    border-color: #000!important
+  }
+  .vux-header-title,
+  .vux-header-left,
+  .vux-header-right,
+  .vux-header-right a {
+    color: #000!important;
+  }
+}
+
+// 订单页暂无提示文字背景去除
+.order-empty {
+  .weui-loadmore__tips {
+    background-color: transparent!important
+  }
+}
+
+.order_page {
+  .weui-btn_disabled.weui-btn_primary {
+    background-color: #e2e2e2
+  }
+}
+
+// 字体颜色
+.textC {
+  color: #888
+}
+
+// 评价页面
+.grade-content-img {
+  .weui-cells:before {
+    display: none
+  }
+}
+
+// 修改密码页面
+.edit_password_page {
+  .weui-input {
+    background-color: #f5f5f5!important;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    border-radius: 30px;
+  }
+  input {
+    font-size: 16px!important;
+  }
+  .weui-cells:before {
+    display: none;
+  }
+  .weui-icon-clear {
+    font-size: 21px;
+  }
+  .weui-cell__ft {
+    position: relative;
+    .weui-icon-warn {
+      position: absolute;
+      top: 50%;
+      left: -40px;
+      transform: translate(0, -50%);
+    }
+  }
+}
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color: #F5F5F5;
+}
+
+
+/*定义滚动条轨道 内阴影+圆角*/
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+
+/*定义滑块 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #555;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="search"],
+input[type="reset"] {
+  -webkit-appearance: none;
+}
+
+textarea {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.clear {
+  zoom: 1;
+}
+
+.back_img {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.margin {
+  margin: 0 auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.paddingTop {
+  padding-top: 1.95rem;
+}
+
+@keyframes backOpacity {
+  0% {
+    opacity: 1
+  }
+  25% {
+    opacity: .5
+  }
+  50% {
+    opacity: 1
+  }
+  75% {
+    opacity: .5
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+.animation_opactiy {
+  animation: backOpacity 2s ease-in-out infinite;
+}
